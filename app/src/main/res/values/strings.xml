@@ -1,0 +1,5 @@
+<resources>
+    <!--App 名字-->
+    <string name="app_name">从零到有</string>
+    <string name="custom_view">自定义Ui组件--跟随手指的小球</string>
+</resources>
