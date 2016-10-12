@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".customview.CustomViewActivity" android:label="@string/custom_view"/>
+        <activity android:name=".activity.CustomViewOneActivity" android:label="自定义view（一）"/>
+        <activity android:name=".activity.PopupWindowsBottomActivity" android:label="底部弹窗PopupWindows"/>
     </application>
 
 </manifest>

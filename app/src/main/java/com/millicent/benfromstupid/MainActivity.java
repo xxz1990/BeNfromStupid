@@ -11,14 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.millicent.benfromstupid.activity.CustomViewOneActivity;
+import com.millicent.benfromstupid.activity.PopupWindowsBottomActivity;
 import com.millicent.benfromstupid.customview.CustomViewActivity;
 
 public class MainActivity extends Activity {
 
     private RecyclerView recyclerView;
 
-    private String[] title = {"自定义UI组件"};
-    private String[] subtitle = {"跟随手指的小球"};
+    private String[] title = {"自定义UI组件","自定义VIEW（一）","底部弹窗"};
+    private String[] subtitle = {"跟随手指的小球","自定义view。1.","底部弹窗PopupWindows"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,12 @@ public class MainActivity extends Activity {
                 switch (position){
                     case 0:
                         startActivity(new Intent(MainActivity.this,CustomViewActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MainActivity.this,CustomViewOneActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this,PopupWindowsBottomActivity.class));
                         break;
                 }
             }
